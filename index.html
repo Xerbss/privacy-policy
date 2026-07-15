@@ -116,6 +116,11 @@
 
   <h2>1. Information We Collect</h2>
 
+  <h3>Age Verification</h3>
+  <p>The first time you open the App, you're asked to enter your date of birth (month, day, year) via a neutral screen — the same screen, with the same wording, for every player. Nothing on this screen hints that any particular answer unlocks anything.</p>
+  <div class="note">Your birth date is used once, locally on your device, to calculate whether you're under 13. The birth date itself is never saved anywhere — only the result of that calculation (a true/false flag) is stored locally on your device, together with a flag noting that the screen has been completed. Returning players aren't asked again. If this check can't be completed for any reason, the App defaults to treating the session as a child's for ad purposes — it never assumes you're older than 13 by default.</div>
+  <p>This flag determines which ad experience you see, as described in Section 4 (Children's Privacy). No ads of any kind are requested or shown until this screen has been completed.</p>
+
   <h3>Advertising &amp; Diagnostic Data</h3>
   <p>The App displays ads using a mediation setup that includes Google AdMob and Unity Ads (LevelPlay mediation), along with any additional networks in their mediation chains. AppLovin MAX is integrated as an additional mediation partner but is not yet active; this policy will be updated once it begins serving ads. To serve and measure ads, and to keep the App stable, these SDKs automatically collect the data described below:</p>
   <table>
@@ -127,7 +132,7 @@
     </tr>
     <tr>
       <td>Device or other IDs (e.g. advertising ID)</td>
-      <td>Yes</td>
+      <td>Yes, for players 13 and over only — never collected for players under 13 (see Section 4)</td>
       <td>Yes</td>
       <td>Advertising or marketing</td>
     </tr>
@@ -157,13 +162,13 @@
     </tr>
     <tr>
       <td>Approximate location (derived from IP)</td>
-      <td>Yes</td>
+      <td>Yes, for players 13 and over only</td>
       <td>Yes</td>
       <td>Advertising or marketing</td>
     </tr>
   </table>
   <p>This data is collected and processed by our ad mediation partners according to their own privacy policies, not by us directly. You can review their practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> (Google AdMob) and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a> (Unity Ads). Once AppLovin MAX becomes active, its privacy policy will also be linked here.</p>
-  <p>None of this data is processed ephemerally — it may be retained by these providers for as long as needed to serve its purpose. Collection is required for the App's advertising and stability functions and cannot be individually disabled within the App, though you can reset or limit your device's advertising identifier through your device's system settings.</p>
+  <p>None of this data is processed ephemerally — it may be retained by these providers for as long as needed to serve its purpose. Collection is required for the App's advertising and stability functions and cannot be individually disabled within the App, though players 13 and over can reset or limit their device's advertising identifier through their device's system settings.</p>
 
   <h3>Game Progress &amp; Cloud Save</h3>
   <p>On Android, the App uses Google Play Games Services to let you sign in with your Google account and sync your game progress (level completion, unlocks, settings) across devices. If you don't sign in, or while offline, progress is saved locally on your device using standard storage mechanisms. See Section 2 below for what this sign-in accesses.</p>
@@ -186,16 +191,22 @@
   <p>Any data described above is used solely to display and measure advertising, and to diagnose and fix technical issues. We do not sell your personal information.</p>
   <p>Where GDPR applies (EEA/UK users), we and our ad partners rely on the following legal bases:</p>
   <ul>
-    <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — for personalized/targeted advertising and any non-essential tracking identifiers. Where required, a consent prompt is shown before this occurs, and you can withdraw consent at any time (see Section 7).</li>
+    <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — for personalized/targeted advertising and any non-essential tracking identifiers, for players 13 and over. Where required, a consent prompt is shown before this occurs, and you can withdraw consent at any time (see Section 7).</li>
     <li><strong>Legitimate interests</strong> (Art. 6(1)(f) GDPR) — for non-personalized (contextual) advertising needed to keep the App free, and for crash/diagnostic logs needed to keep the App functioning correctly.</li>
+    <li><strong>Legal obligation</strong> (Art. 6(1)(c) GDPR) — for the age screen described in Section 1, which exists to comply with COPPA and Google Play's Families policy. This processing isn't optional or consent-based, since it's how we determine and apply the legally required child-safe ad experience.</li>
   </ul>
   <p>The App does not use any data described above to make solely automated decisions that produce legal or similarly significant effects on you. Ad selection may involve automated, algorithm-based targeting by our ad partners, but this does not amount to profiling with legal effect.</p>
 
   <h2>4. Children's Privacy</h2>
-  <p>Cats vs Dogs is a general-audience game and is not directed at children under 13. It is not enrolled in Google Play's Designed for Families program. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us using the details below so we can address it.</p>
+  <p>Cats vs Dogs has a mixed audience: it's designed to be enjoyed by both children under 13 and older players. Because of this, the App uses a neutral age screen (described in Section 1) to determine which ad experience applies to each player, in line with Google Play's Families policy and the US Children's Online Privacy Protection Act (COPPA).</p>
+  <ul>
+    <li><strong>If you're under 13</strong> (or if age couldn't be determined): the App tags every ad request as child-directed. This disables personalized advertising, remarketing, and interest-based ads; prevents your device's advertising ID from being transmitted; and restricts ads to Google Play's Families Self-Certified Ads SDK sources only. This signal is set via our ad mediation platform (Unity LevelPlay), which propagates it to every mediated ad network, including AdMob.</li>
+    <li><strong>If you're 13 or over</strong>: standard (non-child-directed) ads may be shown, as described in Section 1.</li>
+  </ul>
+  <p>We do not knowingly collect personal information from children under 13 beyond the minimal, non-identifying data described in Section 1 (device/advertising identifiers are never collected for child sessions; diagnostic and crash data is not personal or directly identifying). If you are a parent or guardian and believe your child has provided us with personal information beyond what's described here, please contact us using the details in Section 10 and we will address it.</p>
 
   <h2>5. Data Retention</h2>
-  <p>We do not maintain a personal user data profile on our own servers — account-linked data (Play Games profile and cloud save) lives on Google's infrastructure, as described in Section 2. Advertising identifiers, app interaction data, and diagnostic data are retained by our active ad mediation and diagnostic partners (currently AdMob and Unity Ads) according to their own retention policies. Local game data stored on your device can be cleared at any time by uninstalling the App or clearing the App's data via your device settings.</p>
+  <p>We do not maintain a personal user data profile on our own servers — account-linked data (Play Games profile and cloud save) lives on Google's infrastructure, as described in Section 2. The only data related to the age screen that's ever stored is two true/false flags saved locally on your device (whether the screen was completed, and whether the session is treated as a child's); your actual birth date is discarded immediately after that calculation and is never transmitted anywhere. Advertising identifiers, app interaction data, and diagnostic data are retained by our active ad mediation and diagnostic partners (currently AdMob and Unity Ads) according to their own retention policies. Local data stored on your device, including the age-screen flags, can be cleared at any time by uninstalling the App or clearing the App's data via your device settings — doing so will show the age screen again on next launch.</p>
 
   <h2>6. Data Security</h2>
   <p>All data collected by the App and its third-party SDKs is encrypted in transit using industry-standard protocols (TLS). We take reasonable measures to protect the App and the limited data it processes, but no method of electronic processing or storage is 100% secure, and we cannot guarantee absolute security.</p>
