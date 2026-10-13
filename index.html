@@ -110,7 +110,7 @@
   <header>
     <p class="eyebrow">Piegeon</p>
     <h1>Cats vs Dogs — Privacy Policy</h1>
-    <p class="meta">Last updated: July 15, 2026</p>
+    <p class="meta">Last updated: October 13, 2026</p>
   </header>
 
   <p>This Privacy Policy explains how Piegeon ("we," "us," or "our") collects, uses, and shares information when you use the Cats vs Dogs mobile application (the "App"). By using the App, you agree to the practices described below.</p>
@@ -122,8 +122,21 @@
   <div class="note">Your birth date is used once, locally on your device, to calculate whether you're under 13. The birth date itself is never saved anywhere — only the result of that calculation (a true/false flag) is stored locally on your device, together with a flag noting that the screen has been completed. Returning players aren't asked again. If this check can't be completed for any reason, the App defaults to treating the session as a child's for ad purposes — it never assumes you're older than 13 by default.</div>
   <p>This flag determines which ad experience you see, as described in Section 4 (Children's Privacy). No ads of any kind are requested or shown until this screen has been completed.</p>
 
+  <h3>Consent for Advertising (EEA, UK, Switzerland and certain US states)</h3>
+  <p>Where the law requires it, the App shows Google's consent message (Google User Messaging Platform) after the age screen and before any ads are requested. There you can accept, reject, or manage how our ad partners may use your data. You can change your choices at any time with the "Privacy options" button in the App's Settings menu; this button is shown wherever such a choice is legally required.</p>
+
   <h3>Advertising &amp; Diagnostic Data</h3>
-  <p>The App displays ads using a mediation setup that includes Google AdMob and Unity Ads (LevelPlay mediation), along with any additional networks in their mediation chains. AppLovin MAX is integrated as an additional mediation partner but is not yet active; this policy will be updated once it begins serving ads. To serve and measure ads, and to keep the App stable, these SDKs automatically collect the data described below:</p>
+  <p>The App shows banner ads on its menu screens, occasional full-screen ads between levels, and optional rewarded ads that you can choose to watch for an in-game reward. Ads are delivered through Google AdMob mediation. For each ad, AdMob runs a real-time auction (bidding) among the following ad networks:</p>
+  <ul>
+    <li>Google AdMob</li>
+    <li>Unity Ads</li>
+    <li>ironSource Ads (part of Unity)</li>
+    <li>InMobi</li>
+    <li>Liftoff Monetize (formerly Vungle)</li>
+    <li>DT Exchange (Digital Turbine)</li>
+    <li>Mintegral — only for players 13 and over; it never receives ad requests from child sessions (see Section 4)</li>
+  </ul>
+  <p>Older versions of the App used Unity LevelPlay mediation; players who haven't updated yet may still receive ads through it until they update. To serve and measure ads, and to keep the App stable, these SDKs automatically collect the data described below:</p>
   <table>
     <tr>
       <th>Data type</th>
@@ -167,32 +180,54 @@
       <td>Yes</td>
       <td>Advertising or marketing</td>
     </tr>
+    <tr>
+      <td>Purchase history (in-app purchases)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>App functionality (delivering what you bought)</td>
+    </tr>
   </table>
-  <p>This data is collected and processed by our ad mediation partners according to their own privacy policies, not by us directly. You can review their practices at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> (Google AdMob) and <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a> (Unity Ads). Once AppLovin MAX becomes active, its privacy policy will also be linked here.</p>
-  <p>None of this data is processed ephemerally — it may be retained by these providers for as long as needed to serve its purpose. Collection is required for the App's advertising and stability functions and cannot be individually disabled within the App, though players 13 and over can reset or limit their device's advertising identifier through their device's system settings.</p>
+  <p>Advertising data is collected and processed by our ad partners according to their own privacy policies, not by us directly. You can review their practices here:</p>
+  <ul>
+    <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
+    <li>ironSource Ads (Unity) — <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">unity.com/legal/privacy-policy</a></li>
+    <li>InMobi — <a href="https://advertising.inmobi.com/privacy-policy" target="_blank" rel="noopener">advertising.inmobi.com/privacy-policy</a></li>
+    <li>Liftoff Monetize — <a href="https://liftoff.ai/privacy-policy/" target="_blank" rel="noopener">liftoff.ai/privacy-policy</a></li>
+    <li>DT Exchange (Digital Turbine) — <a href="https://www.digitalturbine.com/legal/privacy-policy" target="_blank" rel="noopener">digitalturbine.com/legal/privacy-policy</a></li>
+    <li>Mintegral — <a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener">mintegral.com/en/privacy</a></li>
+  </ul>
+  <p>None of this data is processed ephemerally — it may be retained by these providers for as long as needed to serve its purpose. Collection is required for the App's advertising and stability functions and cannot be individually disabled within the App, though players 13 and over can reset or limit their device's advertising identifier through their device's system settings, and players in regions with a consent requirement can change their choices with the "Privacy options" button described above.</p>
+
+  <h3>In-App Purchases</h3>
+  <p>The App offers optional in-app purchases: "Remove Ads" (removes banner and full-screen ads; optional rewarded ads stay available if you want them) and packs of in-game power-ups. All payments are handled by Google Play Billing. We never see or store your payment details (such as card numbers) — Google processes the payment and tells the App only which item was bought, so it can be delivered. The App stores the result locally on your device (whether ads were removed, and how many power-ups you have) and, if you use cloud save, as part of your save file (see Section 2). Purchases are subject to <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" target="_blank" rel="noopener">Google Payments' privacy notice</a>. Parents can require a password or other authentication for purchases in the Google Play Store settings.</p>
 
   <h3>Game Progress &amp; Cloud Save</h3>
-  <p>On Android, the App uses Google Play Games Services to let you sign in with your Google account and sync your game progress (level completion, unlocks, settings) across devices. If you don't sign in, or while offline, progress is saved locally on your device using standard storage mechanisms. See Section 2 below for what this sign-in accesses.</p>
+  <p>On Android, the App uses Google Play Games Services to let you sign in with your Google account and sync your game progress (level completion, stars, power-ups, purchases, settings) across devices. If you don't sign in, or while offline, progress is saved locally on your device using standard storage mechanisms. See Section 2 below for what this sign-in accesses.</p>
+
+  <h3>Reviews &amp; Updates</h3>
+  <p>The App may occasionally show Google Play's built-in "rate this app" window, and Google Play's in-app update prompt when a new version is available. Both are provided and run entirely by Google Play. The App does not learn whether you left a review or what you wrote, and no data from these windows is sent to us.</p>
 
   <h3>Information We Don't Collect</h3>
-  <p>We do not require account creation to play the App (Google sign-in for cloud save is optional — see Section 2). The App does not collect your name, email address, or other directly identifying information beyond what Google Play Games Services provides for sign-in, and we do not currently use in-app purchases in this App.</p>
+  <p>We do not require account creation to play the App (Google sign-in for cloud save is optional — see Section 2). The App does not collect your name, email address, or other directly identifying information beyond what Google Play Games Services provides for sign-in.</p>
 
   <h2>2. Google User Data</h2>
   <p>On Android, the App uses <strong>Google Play Games Services Sign-In</strong> so you can save your progress to the cloud and sync it across devices. This is optional — you can play the App fully without signing in, in which case no Google Account data is accessed and progress is saved locally only. If you do sign in, the section below describes exactly what happens, in the specific terms Google requests for API/OAuth review.</p>
   <div class="note">
     <p style="margin:0 0 8px;"><strong>Data Accessed:</strong> Your Google Play Games player ID, public display name, and profile photo, provided automatically by Google Play Games Services when you sign in. We do not request your email address, contacts, Drive files, or any other Google data. The App does not use leaderboards or achievements, so no gameplay activity is shared to a public profile.</p>
-    <p style="margin:0 0 8px;"><strong>Data Usage:</strong> This data is used solely to identify your save file and sync your game progress (level completion, unlocks, settings) across your devices via Google's Saved Games API.</p>
+    <p style="margin:0 0 8px;"><strong>Data Usage:</strong> This data is used solely to identify your save file and sync your game progress (level completion, stars, power-ups, purchases, settings) across your devices via Google's Saved Games API.</p>
     <p style="margin:0 0 8px;"><strong>Data Sharing:</strong> We do not share this data with any third party, including our advertising partners. It is only exchanged with Google as necessary to operate Play Games Services sign-in and cloud save.</p>
     <p style="margin:0 0 8px;"><strong>Data Storage &amp; Protection:</strong> Your save data and Play Games profile information are stored on Google's infrastructure (Play Games Services / Saved Games API), not on our own servers. All data is encrypted in transit using TLS.</p>
-    <p style="margin:0;"><strong>Data Retention &amp; Deletion:</strong> This data is retained for as long as your Google account remains linked to the App. You can unlink it at any time from within the App's settings, or delete your Play Games activity entirely via your Google Account settings (<a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>). You can also contact us at the email in Section 10 to request deletion.</p>
+    <p style="margin:0;"><strong>Data Retention &amp; Deletion:</strong> This data is retained for as long as your Google account remains linked to the App. You can disconnect the App or delete your Play Games data at any time in the Google Play Games settings or your Google Account settings (<a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>). You can also contact us at the email in Section 10 to request deletion.</p>
   </div>
   <p>If a future update adds new Google API scopes (for example, leaderboards or achievements), we will update this section and, where required, prompt you for consent before the change takes effect.</p>
 
   <h2>3. How We Use Information &amp; Legal Basis</h2>
-  <p>Any data described above is used solely to display and measure advertising, and to diagnose and fix technical issues. We do not sell your personal information.</p>
+  <p>Any data described above is used solely to display and measure advertising, to deliver in-app purchases, to save and sync your game progress, and to diagnose and fix technical issues. We do not sell your personal information.</p>
   <p>Where GDPR applies (EEA/UK users), we and our ad partners rely on the following legal bases:</p>
   <ul>
-    <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — for personalized/targeted advertising and any non-essential tracking identifiers, for players 13 and over. Where required, a consent prompt is shown before this occurs, and you can withdraw consent at any time (see Section 7).</li>
+    <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — for personalized/targeted advertising and any non-essential tracking identifiers. Advertising consent is collected through the consent message described in Section 1 and applies only to players 13 and over.</li>
+    <li><strong>Performance of a contract</strong> (Art. 6(1)(b) GDPR) — for delivering in-app purchases you make, and for cloud save if you choose to sign in.</li>
     <li><strong>Legitimate interests</strong> (Art. 6(1)(f) GDPR) — for non-personalized (contextual) advertising needed to keep the App free, and for crash/diagnostic logs needed to keep the App functioning correctly.</li>
     <li><strong>Legal obligation</strong> (Art. 6(1)(c) GDPR) — for the age screen described in Section 1, which exists to comply with COPPA and Google Play's Families policy. This processing isn't optional or consent-based, since it's how we determine and apply the legally required child-safe ad experience.</li>
   </ul>
@@ -201,13 +236,13 @@
   <h2>4. Children's Privacy</h2>
   <p>Cats vs Dogs has a mixed audience: it's designed to be enjoyed by both children under 13 and older players. Because of this, the App uses a neutral age screen (described in Section 1) to determine which ad experience applies to each player, in line with Google Play's Families policy and the US Children's Online Privacy Protection Act (COPPA).</p>
   <ul>
-    <li><strong>If you're under 13</strong> (or if age couldn't be determined): the App tags every ad request as child-directed. This disables personalized advertising, remarketing, and interest-based ads; prevents your device's advertising ID from being transmitted; and restricts ads to Google Play's Families Self-Certified Ads SDK sources only. This signal is set via our ad mediation platform (Unity LevelPlay), which propagates it to every mediated ad network, including AdMob.</li>
+    <li><strong>If you're under 13</strong> (or if age couldn't be determined): the App tags every ad request as child-directed and limits ads to content rated for general audiences (G). This disables personalized advertising, remarketing, and interest-based ads, and prevents your device's advertising ID from being used for advertising. This signal is set through the Google Mobile Ads SDK (AdMob), which passes it to every mediated ad network. Child sessions only use ad units whose auctions include Google Play Families Self-Certified ad networks (Google AdMob, Unity Ads, ironSource, InMobi, Liftoff Monetize and DT Exchange); Mintegral, which is not self-certified, never receives ad requests from child sess
     <li><strong>If you're 13 or over</strong>: standard (non-child-directed) ads may be shown, as described in Section 1.</li>
   </ul>
-  <p>We do not knowingly collect personal information from children under 13 beyond the minimal, non-identifying data described in Section 1 (device/advertising identifiers are never collected for child sessions; diagnostic and crash data is not personal or directly identifying). If you are a parent or guardian and believe your child has provided us with personal information beyond what's described here, please contact us using the details in Section 10 and we will address it.</p>
+  <p>We do not knowingly collect personal information from children under 13 beyond the minimal, non-identifying data described in Section 1 (device/advertising identifiers are never collected for child sessions; diagnostic and crash data is not personal or directly identifying). In-app purchases always go through Google Play, where parents can require authentication for every purchase. If you are a parent or guardian and believe your child has provided us with personal information beyond what's described here, please contact us using the details in Section 10 and we will address it.</p>
 
   <h2>5. Data Retention</h2>
-  <p>We do not maintain a personal user data profile on our own servers — account-linked data (Play Games profile and cloud save) lives on Google's infrastructure, as described in Section 2. The only data related to the age screen that's ever stored is two true/false flags saved locally on your device (whether the screen was completed, and whether the session is treated as a child's); your actual birth date is discarded immediately after that calculation and is never transmitted anywhere. Advertising identifiers, app interaction data, and diagnostic data are retained by our active ad mediation and diagnostic partners (currently AdMob and Unity Ads) according to their own retention policies. Local data stored on your device, including the age-screen flags, can be cleared at any time by uninstalling the App or clearing the App's data via your device settings — doing so will show the age screen again on next launch.</p>
+  <p>We do not maintain a personal user data profile on our own servers — account-linked data (Play Games profile and cloud save) lives on Google's infrastructure, as described in Section 2. The only data related to the age screen that's ever stored is two true/false flags saved locally on your device (whether the screen was completed, and whether the session is treated as a child's); your actual birth date is discarded immediately after that calculation and is never transmitted anywhere. Your advertising consent choices (where applicable), your purchases (whether ads were removed, power-up counts) and your game progress are also stored locally on your device. Advertising identifiers, app interaction data, and diagnostic data are retained by our ad partners listed in Section 1 according to their own retention policies. Local data stored on your device, including the age-screen flags and consent choices, can be cleared at any time by uninstalling the App or clearing the App's data via your device settings — doing so will show the age screen again on next launch. Purchases of "Remove Ads" are tied to your Google Play account by Google and can be restored by Google Play after reinstalling.</p>
 
   <h2>6. Data Security</h2>
   <p>All data collected by the App and its third-party SDKs is encrypted in transit using industry-standard protocols (TLS). We take reasonable measures to protect the App and the limited data it processes, but no method of electronic processing or storage is 100% secure, and we cannot guarantee absolute security.</p>
@@ -221,13 +256,13 @@
     <li><strong>Restriction</strong> — request that we limit how your data is processed.</li>
     <li><strong>Objection</strong> — object to processing based on legitimate interests, including ad-related processing.</li>
     <li><strong>Data portability</strong> — request your data in a portable format, where technically feasible.</li>
-    <li><strong>Withdraw consent</strong> — where processing is based on consent (e.g. personalized advertising), you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal, by resetting/limiting your device's advertising identifier or adjusting the consent prompt shown in the App.</li>
+    <li><strong>Withdraw consent</strong> — where processing is based on consent (e.g. personalized advertising), you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal: change your advertising choices with the "Privacy options" button in the App's Settings menu, and/or reset or limit your advertising identifier.</li>
   </ul>
-  <p>Since most ad-related and diagnostic data is collected directly by our mediation and SDK partners, requests about that data are often best directed to them via their own privacy tools (linked in Section 1), but you can also contact us at the details in Section 10 and we will assist where we can.</p>
+  <p>Since most ad-related and diagnostic data is collected directly by our ad partners, requests about that data are often best directed to them via their own privacy tools (linked in Section 1), but you can also contact us at the details in Section 10 and we will assist where we can.</p>
   <p>You also have the right to lodge a complaint with a data protection supervisory authority. If you are in Poland, this is the Urząd Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa, <a href="https://uodo.gov.pl" target="_blank" rel="noopener">uodo.gov.pl</a>. If you are elsewhere in the EEA/UK, you may contact your local supervisory authority instead.</p>
 
   <h2>8. International Data Transfers</h2>
-  <p>Piegeon is based in Poland (EU). Advertising and diagnostic partners such as Google and Unity (and AppLovin, once active) may process data in other countries, including the United States, using appropriate safeguards as described in their own privacy policies.</p>
+  <p>Piegeon is based in Poland (EU). Google and our advertising and diagnostic partners (Unity/ironSource, InMobi, Liftoff, Digital Turbine and Mintegral) may process data in countries outside the EEA, including the United States, using appropriate safeguards as described in their own privacy policies.</p>
 
   <h2>9. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time, for example as the App's features change. We'll update the "Last updated" date above when we do. If a future change means the App begins accessing new or additional Google user data or scopes beyond what's described in Section 2, we will update Section 2 accordingly and, where required, prompt users for consent before the change takes effect. Continued use of the App after changes take effect means you accept the revised policy.</p>
